@@ -1,0 +1,148 @@
+@font-face {
+    font-family: calen;
+    src: url(./calen-vanda/Calen\ Vanda.otf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    min-height: 100svh;
+    width: 100vw;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "top-one"
+                         "buttom-one";
+    gap: 20px;
+    padding: 20px;
+
+
+    .top-one{
+        grid-area: top-one;
+        background-color: red;
+        width: 90%;
+        background-image: url(./24770152_101.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 16px auto;
+    }
+
+    .buttom-one{
+        grid-area: buttom-one;
+        background-color: #76856C;
+        color: white;
+        width: 90%;
+        margin: 16px auto;
+        border-radius: 16px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+
+
+        h1{
+            font-size: 1rem;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px 20px;
+        }
+
+        h2{
+            font-size: 1rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            padding: 20px 20px;
+
+        }
+        
+        p{
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+            line-height: 1.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px 20px;
+        }
+
+        .hire{
+            width: 120px;
+            height: 40px;
+            color: white;
+            background-color: rgb(77, 75, 75);
+            border: 1.5px solid white;
+            border-radius: 20px;
+            padding: 0px 20px;
+            cursor: pointer;
+
+        }
+
+       
+    }
+}
+
+
+@media(min-width: 768px){
+    main{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "top-one buttom-one";
+
+       
+        .top-one,.buttom-one{
+            height: 90svh;
+            margin: 16px;
+
+        }
+
+        .buttom-one{
+            display:flex;
+
+        }
+
+         h1{
+                font-size: 1.5rem;
+                margin-top: 4rem;
+                font-family: calen;
+                
+            }
+            h2{
+                font-size: 2.5rem;
+                margin-top: 6rem;
+                line-height: 1.9rem;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p{
+                font-size: 1.9rem;
+                line-height: 2rem;
+                margin-top: 1rem;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            button{
+                font-size: 1.2rem;
+                width: 150px;
+                height: 100px;
+                margin-bottom: 2rem;
+                margin-left: 2rem;
+            }
+
+      
+
+        
+    }
+}
+
